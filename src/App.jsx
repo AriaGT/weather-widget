@@ -16,7 +16,7 @@ function App() {
       celsius: '--',
       fahrenheit: '--'
     },
-    ubication: 'Esperando Ubicación...',
+    ubication: 'Esperando permisos de Ubicación...',
     humidity: '--',
     windSpeed: {
       celsius: '--',

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWind, faDroplet, faCloud, faTemperatureThreeQuarters, faRotateRight, faMinus} from '@fortawesome/free-solid-svg-icons'
+import { faWind, faDroplet, faCloud, faTemperatureHalf, faRotateRight, faMinus} from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
@@ -55,10 +55,10 @@ const WeatherWidget = ({weatherInfo}) => {
       </div>
       <div className={`widget__temp ${tempLevel}`}>
         <div className="widget_temperature">
-          <FontAwesomeIcon icon={faTemperatureThreeQuarters} /><h2 className='widget__temp__temp'>{weatherInfo.temp[unit.name]}{unit.symbol}</h2>
+          <FontAwesomeIcon icon={faTemperatureHalf} /><h2 className='widget__temp__temp'>{weatherInfo.temp[unit.name]}{unit.symbol}</h2>
         </div>
       </div>
-      <p>{weatherInfo.ubication}</p>
+      <p className='widget__ubi'>{weatherInfo.ubication}</p>
       <div className="widget__extraData">
         <div className="widget__extraData__element">
           <FontAwesomeIcon className='widget__extraData__icon' icon={faWind} />
