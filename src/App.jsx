@@ -103,7 +103,7 @@ function App() {
 
   return (
     <div style={background} className="App">
-      <h1 className='App__title'>Widget del Clima</h1>
+      <h1 className='App__title'>Clima Widget by Aria</h1>
         <WeatherWidget 
           weatherInfo={weatherInfo}
         />
